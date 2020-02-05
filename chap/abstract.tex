@@ -1,0 +1,15 @@
+%\section{Abstract}
+\begin{abstract}
+In public areas such as company,libraries, coffee shops or hotels, WLANs is widely used because they are often free for users. Typically the administrators of the WLANs sets a password that is fixed during a period of time and any mobile devices can access the network by the WPA-PSK protocol if they get the password. The open communications environment and fixed password makes wireless transmissions more vulnerable to malicious attacks. The password is relatively simple  which has the risk of being guessed by the attacker. Meanwhile, as the password is unchanged, once the attackers or the unauthorized users get the password, they can access the network freely unless the password expires. For temporary visitors, fixed password makes them always have access permissions of the wireless network, which is obviously not conducive to the dynamic management of access rights.
+
+ %However, none of the existing WLAN authentication methods well combine the above two goals.
+ 
+This paper introduces a WLAN dynamic password scheme combined with physical access control, which can be applied to large-scale guest WLANs of large organizations. In this scheme, the WLAN password is automatically updated every specified interval without additional action by the administrator. Once the AP updates the password, mobile devices must update the password synchronously to access WLAN again. 
+%A physical authentication factor is introduced to the password updating process. Users must pass the physical authentication and enter a specific location to get the physical authentication factor. Then mobile devices use the physical authentication factor to calculate the new password and continue accessing WLAN.
+Because the password is updated periodically, this scheme can effectively prevent fake AP attacks,brute force attacks and revoke the access rights of visitors dynamically. We use some indexes to assessment the performance of our scheme, experiments show that the proposed scheme has little influence on system performance. Meanwhile, it can improve the experience of WLAN administrators and users, and improve the security of WLAN systems.
+\end{abstract}
+ 
+
+\begin{IEEEkeywords}
+Dynamic Password, WLAN Access, Physical Authentication
+\end{IEEEkeywords}

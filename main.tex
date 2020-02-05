@@ -1,0 +1,61 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+%\documentclass[runningheads]{llncs}
+\documentclass[conference]{IEEEtran}
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+\usepackage{verbatim}
+\usepackage{color}
+%\newcommand{\gl}[1]{\textcolor{red}{#1}}
+
+\begin{document}
+%
+\title{The Evolving Passwords for WLAN Authentication with Location-based Physical Controls
+}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+
+%
+\maketitle              % typeset the header of the contribution
+%
+
+%本文没有带来安全性上的提高（如果硬认为有，那就是动态更新PSK）
+%主要贡献点就是 可以动态更新更新PSK
+%%可以就这点说明，PSK需要动态更新，否则由于传播，将导致PSK的大规模泄露；
+%%%%--但本文中，只要泄露了中间一次PSK，是不是只要物理接近，就可以一直使用？
+%物理位置，我不认为值得特别说明，是一个显然的事情，因为只有在物理位置接近时，才可以用WIFI
+
+\input{chap/abstract.tex}
+\input{chap/intro.tex}
+\input{chap/threatmodel.tex}
+\input{chap/systemoverview.tex}
+\input{chap/LargeOrganizationScenario.tex}
+\input{chap/implementation.tex}
+\input{chap/analysis.tex}
+\input{chap/realationwork.tex}
+\input{chap/conc.tex}
+
+%\section*{Acknowledgments} 
+%This work was partially supported by National Natural Science Foundation of China (No. 61772518).
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+ %\bibliographystyle{splncs04}
+ \bibliographystyle{IEEEtran}
+ \bibliography{bib/reference}
+
+\end{document}
